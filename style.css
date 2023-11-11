@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* primary colors */
+    --clr-primary-dark-blue-intro-email-bg: hsl(217, 28%, 15%);
+    --clr-primary-dark-blue-main-bg: hsl(218, 28%, 13%);
+    --clr-primary-dark-blue-footer-bg: hsl(216, 53%, 9%);
+    --clr-primary-dark-blue-testimonials: hsl(219, 30%, 18%);
+
+    /* accent colors */
+    --clr-accent-cyan-cta-gradient: hsl(176, 68%, 64%);
+    --clr-accent-blue-cta-gradient: hsl(198, 60%, 50%);
+    --clr-accent-light-red-error: hsl(0, 100%, 63%);
+
+    /* neutral colors */
+    --clr-White: hsl(0, 0%, 100%);
+
+    /* fonts */
+    --font-heading-nav-cta-400-700: 'Raleway', sans-serif; 
+    --font-body-400-700: 'Open Sans', sans-serif; 
+
+}
+
+body {
+    min-width: 100%;
+    max-width: 1440px;
+    font-size: 14px;
+    background-color: var(--clr-primary-dark-blue-main-bg);
+}
