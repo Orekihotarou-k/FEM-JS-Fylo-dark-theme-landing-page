@@ -399,13 +399,13 @@ button:hover {
 
 .footer-nav {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .col1 {
-    flex-basis: 25%;
+    flex-basis: 30%;
 }
 
 .col1 > p, .col2 > span {
@@ -413,6 +413,28 @@ button:hover {
     align-items: flex-start;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials > i {
+    text-align: center;
+    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+    padding: .48rem;
+    color: var(--clr-White);
+    border: 1px solid var(--clr-White);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color .3s ease-in, border-color .3s ease-out;
+}
+
+.socials > i:hover {
+    border-color: var(--clr-accent-cyan-cta-gradient);
+    color: var(--clr-accent-cyan-cta-gradient);
 }
 
 
@@ -497,6 +519,10 @@ MEDIA QUERY
         left: 32%;
     }
 
+    .socials {
+        margin-top: 2rem;
+    }
+
 
     @media (max-width: 500px) {
         .logo-img {
@@ -540,6 +566,12 @@ MEDIA QUERY
 
         .__footer > .logo-img {
             width: 25%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .error {
+            left: 20%;
         }
     }
 }
